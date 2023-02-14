@@ -1,0 +1,164 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "x!/altcontrol",IntroEnabled = false, HidePremium = true, SaveConfig = false, ConfigFolder = "OrionLib"})
+local function msg(msg1)
+	game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg1, 'All')
+end
+
+
+local commands1 = Window:MakeTab({
+	Name = "Commands",
+	Icon = "",
+	PremiumOnly = false
+})
+
+local s1 = commands1:AddSection({
+	Name = "Bring"
+})
+
+s1:AddButton({
+	Name = "Bring Alts",
+	Callback = function()
+		msg(Settings['Prefix']..'bring')
+	end    
+})
+local s2 = commands1:AddSection({
+	Name = "Dropping"
+})
+s2:AddButton({
+	Name = "Start Dropping",
+	Callback = function()
+		msg(Settings['Prefix']..'drop')
+	end    
+})
+s2:AddButton({
+	Name = "Stop Dropping",
+	Callback = function()
+		msg(Settings['Prefix']..'stop')
+	end    
+})
+local s3 = commands1:AddSection({
+	Name = "Wallet"
+})
+s3:AddButton({
+	Name = "Equip Wallet",
+	Callback = function()
+		msg(Settings['Prefix']..'wallet on')
+	end    
+})
+s3:AddButton({
+	Name = "Unequip Wallet",
+	Callback = function()
+		msg(Settings['Prefix']..'wallet off')
+	end    
+})
+local s4 = commands1:AddSection({
+	Name = "Airlock"
+})
+s4:AddButton({
+	Name = "Enable Airlock",
+	Callback = function()
+		msg(Settings['Prefix']..'airlock on')
+	end    
+})
+s4:AddButton({
+	Name = "Disable Airlock",
+	Callback = function()
+		msg(Settings['Prefix']..'airlock off')
+	end    
+})
+local s5 = commands1:AddSection({
+	Name = "Anchor"
+})
+s5:AddButton({
+	Name = "Enable Anchor",
+	Callback = function()
+		msg(Settings['Prefix']..'anchor on')
+	end    
+})
+s5:AddButton({
+	Name = "Disable Anchor",
+	Callback = function()
+		msg(Settings['Prefix']..'anchor off')
+	end    
+})
+local s6 = commands1:AddSection({
+	Name = "Destroy Cash"
+})
+s6:AddButton({
+	Name = "Enable Loop Destroy Cash",
+	Callback = function()
+		msg(Settings['Prefix']..'loopdestroy on')
+	end    
+})
+s6:AddButton({
+	Name = "Disable Loop Destroy Cash",
+	Callback = function()
+		msg(Settings['Prefix']..'loopdestroy off')
+	end    
+})
+local s7 = commands1:AddSection({
+	Name = "Ad"
+})
+s7:AddButton({
+	Name = "Enable Ad",
+	Callback = function()
+		msg(Settings['Prefix']..'ad on')
+	end    
+})
+s7:AddButton({
+	Name = "Disable Ad",
+	Callback = function()
+		msg(Settings['Prefix']..'ad off')
+	end    
+})
+local s8 = commands1:AddSection({
+	Name = "Sit"
+})
+s8:AddButton({
+	Name = "Enable Sitting",
+	Callback = function()
+		msg(Settings['Prefix']..'sit on')
+	end    
+})
+s8:AddButton({
+	Name = "Disable Sitting",
+	Callback = function()
+		msg(Settings['Prefix']..'sit off')
+	end    
+})
+local s9 = commands1:AddSection({
+	Name = "Misc"
+})
+s9:AddButton({
+	Name = "Jump",
+	Callback = function()
+		msg(Settings['Prefix']..'jump')
+	end    
+})
+
+
+
+
+local setups = Window:MakeTab({
+	Name = "Setup Locations",
+	Icon = "",
+	PremiumOnly = false
+})
+setups:AddButton({
+	Name = "Bank",
+	Callback = function()
+		msg(Settings['Prefix']..'setup bank')
+	end    
+})
+setups:AddButton({
+	Name = "Admin",
+	Callback = function()
+		msg(Settings['Prefix']..'setup admin')
+	end    
+})
+setups:AddButton({
+	Name = "Club",
+	Callback = function()
+		msg(Settings['Prefix']..'setup club')
+	end    
+})
