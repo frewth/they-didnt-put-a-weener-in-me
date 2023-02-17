@@ -9,7 +9,7 @@ local Part = Instance.new("Part",workspace)
 Part.Name = "SHIT"
 Part.Size = Vector3.new(1,1,5)
 Part.Transparency = 0
-Part.CFrame = CFrame.new(207, 70, 200020)
+Part.CFrame = CFrame.new(-50, 130, 175)
 Part.Anchored = true	
 player.Idled:Connect(function()
 	game:service"VirtualUser":Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
