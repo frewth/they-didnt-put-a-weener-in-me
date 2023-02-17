@@ -39,7 +39,7 @@ if player.UserId == Settings['KnockerID'] then
 	elseif player.UserId == Settings['StomperID'] then
 		IsADick = true
 		setfpscap(Settings['StomperFPS'])
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/lpxy/Sources/Obfuscated/sex002'))()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/lpxy/Sources/main/Obfuscated/sex002'))()
 else
 	setfpscap(Settings['AltFPS'])
 	game:service"RunService":Set3dRenderingEnabled(false)
