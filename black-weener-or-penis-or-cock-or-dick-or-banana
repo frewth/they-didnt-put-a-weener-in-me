@@ -55,7 +55,6 @@ else
 	Frame.BorderSizePixel = 100
 	Frame.Position = UDim2.new(0.5, 0, 0.5, 0)
 	Frame.Size = UDim2.new(1, 0, 1, 0)
-	Frame.Visible = false
 	settings().Physics.PhysicsEnvironmentalThrottle = 1
 	settings().Rendering.QualityLevel = 'Level01'
 	for i,v in pairs(game:GetDescendants()) do
