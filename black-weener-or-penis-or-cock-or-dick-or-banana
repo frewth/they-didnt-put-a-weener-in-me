@@ -22,7 +22,7 @@ if player.UserId == Settings['KnockerID'] then
 	setfpscap(Settings['KnockerFPS'])
 	wait(0.5)
 	player.Character.HumanoidRootPart.CFrame=workspace:FindFirstChild("SHIT").CFrame*CFrame.new(0,3,0)
-	wait()
+	wait(1)
 	player.Character.HumanoidRootPart.Anchored = true
 	wait(1)
 	msg("Only execute once.")
