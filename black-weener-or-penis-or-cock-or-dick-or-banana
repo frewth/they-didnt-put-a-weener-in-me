@@ -7,7 +7,7 @@ end
 local player = game:service"Players".LocalPlayer
 local Part = Instance.new("Part",workspace)
 Part.Name = "SHIT"
-Part.Size = Vector3.new(1,1,5)
+Part.Size = Vector3.new(3,1,5)
 Part.Transparency = 0
 Part.CFrame = CFrame.new(-50, 50, 175)
 Part.Anchored = true	
@@ -22,7 +22,7 @@ if player.UserId == Settings['KnockerID'] then
 	setfpscap(Settings['KnockerFPS'])
 	wait(0.5)
 	player.Character.HumanoidRootPart.CFrame=workspace:FindFirstChild("SHIT").CFrame*CFrame.new(0,3,0)
-	wait(1)
+	wait(2)
 	player.Character.HumanoidRootPart.Anchored = true
 	wait(1)
 	msg("Only execute once.")
